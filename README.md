@@ -43,8 +43,8 @@
  
  1.  **Clone the Repository**
      ```bash
-    git clone https://github.com/JuanPabloMantilla/pdf-rag-chatbot.git
-    cd pdf-rag-chatbot
+     git clone https://github.com/JuanPabloMantilla/pdf-rag-chatbot.git
+     cd pdf-rag-chatbot
      ```
  
  2.  **Create and Activate a Virtual Environment**
