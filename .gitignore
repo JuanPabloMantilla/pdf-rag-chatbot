@@ -1,0 +1,13 @@
+# Virtual Environment
+.venv/
+
+# Environment Variables
+.env
+
+# Python cache
+__pycache__/
+*.pyc
+
+# Generated Artifacts
+faiss_index.bin
+pdf_chunks.pkl
