@@ -4,29 +4,29 @@
  
  ---
  
- ## 🎯 Motivation
+ ## Motivation
  
  As an aspiring AI/ML Engineer, I identified a critical skill gap in my portfolio: hands-on experience with LLM APIs and modern architectures like RAG. This project was built to bridge that gap. It showcases the ability to engineer a complete AI system that goes beyond simple API calls, involving data preprocessing, vector embeddings, similarity search, and sophisticated prompt engineering. This repository serves as a demonstration of both technical depth and the ability to build production-ready AI tools.
  
  ---
  
- ## 🏛️ Architecture: The RAG Pipeline
+ ## Architecture: The RAG Pipeline
  
  The application follows a classic Retrieval-Augmented Generation workflow. This approach enhances the LLM's knowledge by providing it with relevant context from a specific document, reducing hallucinations and enabling it to answer questions about data it wasn't trained on.
  
  #### 1. Indexing Pipeline
  The `index` command processes and stores the knowledge from a PDF.
  
- `[📄 Your PDF]` -> **1. Parse & Chunk** -> `[Text Chunks]` -> **2. Embed** -> `[Vector Embeddings]` -> **3. Index & Store** -> `[💾 FAISS Index]` + `[💾 Chunks File]`
+ `[ Your PDF]` -> **1. Parse & Chunk** -> `[Text Chunks]` -> **2. Embed** -> `[Vector Embeddings]` -> **3. Index & Store** -> `[FAISS Index]` + `[Chunks File]`
  
  #### 2. Chat Pipeline
  The `chat` command uses the stored knowledge to answer questions.
  
- `[❓ Your Question]` -> **1. Embed** -> `[Query Vector]` -> **2. Search** -> `[Relevant Chunks]` -> **3. Prompt LLM** -> `[🤖 Final Answer]`
+ `[Your Question]` -> **1. Embed** -> `[Query Vector]` -> **2. Search** -> `[Relevant Chunks]` -> **3. Prompt LLM** -> `[Final Answer]`
  
  ---
  
- ## 🛠️ Tech Stack
+ ## Tech Stack
  
  * **Python 3.8+**
  * **Document Parsing**: `PyMuPDF` for robust PDF text extraction.
@@ -37,14 +37,14 @@
  
  ---
  
- ## 🚀 Setup and Installation
+ ## Setup and Installation
  
  Follow these steps to set up and run the project locally.
  
  1.  **Clone the Repository**
      ```bash
-     git clone [https://github.com/your-username/chat-with-your-pdf.git](https://github.com/your-username/chat-with-your-pdf.git)
-     cd chat-with-your-pdf
+    git clone https://github.com/JuanPabloMantilla/pdf-rag-chatbot.git
+    cd pdf-rag-chatbot
      ```
  
  2.  **Create and Activate a Virtual Environment**
